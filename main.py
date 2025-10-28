@@ -12,12 +12,12 @@ import plotly.graph_objects as go
 from dash import Dash, html, Input, Output, callback, _dash_renderer
 import dash_mantine_components as dmc
 
-_dash_renderer._set_react_version("19.2.0")
 
+_dash_renderer._set_react_version("18.2.0")
 
 # reading the dataset frim the file 
-df = pd.read_csv("C:\\Users\\Moving_King\\Documents\\BMW_dashboard\\BMW sales data (2010-2024) (1).csv")
-
+df = pd.read_csv(".\\Users\Moving_King\\Documents\\BMW_dashboard\\BMW sales data (2010-2024) 13.xlsx")
+print(df)
 # preparing and deveing more feature for better predictions
 df['Vehicle_Age'] = 2025 - df['Year']
 df['Price_Per_KM'] = df['Price_USD'] / (df['Mileage_KM'] + 1)
