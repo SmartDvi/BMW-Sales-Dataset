@@ -16,7 +16,7 @@ import dash_mantine_components as dmc
 _dash_renderer._set_react_version("18.2.0")
 
 # reading the dataset frim the file 
-df = pd.read_csv(".\\Users\Moving_King\\Documents\\BMW_dashboard\\BMW sales data (2010-2024) 13.xlsx")
+df = pd.read_csv("https://github.com/SmartDvi/BMW-Sales-Dataset/blob/main/BMW%20sales%20data%20(2010-2024)%20(1).csv")
 print(df)
 # preparing and deveing more feature for better predictions
 df['Vehicle_Age'] = 2025 - df['Year']
